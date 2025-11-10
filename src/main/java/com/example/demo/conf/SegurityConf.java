@@ -107,7 +107,13 @@ public class SegurityConf { // (El typo está acá)
                         .requestMatchers(HttpMethod.PUT, "/api/reservas/actualizar/**").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/api/reservas/borrar/**").hasRole("ADMIN")
 
-                        // 6. REGLA FINAL
+                        // 6. ENDPOINTS DE SALAS
+                        // Creación, Actualizacion y eliminacion (ADMIN)
+                        .requestMatchers(HttpMethod.GET, "/api/salas/borrar/**", "/api/salas/crear","/api/salas/actualizar").hasAnyRole("ADMIN")
+                        // Lectura (USER y ADMIN)
+                        .requestMatchers(HttpMethod.POST, "/api/salas/listar").hasAnyRole("ADMIN", "USER")
+
+                        // 7. REGLA FINAL
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form.disable())
