@@ -130,3 +130,4 @@ public class SegurityConf { // (El typo está acá)
 
         return http.build();
     }
+}
