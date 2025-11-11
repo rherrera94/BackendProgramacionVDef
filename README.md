@@ -7,7 +7,6 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/rherrera94/BackendProgramacionVDef?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/rherrera94/BackendProgramacionVDef?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/rherrera94/BackendProgramacionVDef?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/rherrera94/BackendProgramacionVDef?style=for-the-badge)
 
 <br>
