@@ -29,6 +29,7 @@
       - [Login](#Login)
       - [Archivos para seguridad](#Funcion-de-los-archivos)
       - [Rutas de libre acceso](#Rutas-sin-autenticación)
+      - [Convenciones](#Convenciones)
    - [Rutas usuarios](#Rutas-usuarios)
    - [Rutas artículos](#Rutas-artículos)
    - [Rutas personas](#Rutas-personas)
@@ -208,6 +209,11 @@ El sistema implementa **Spring Security**, que protege todos los endpoints excep
 - `/error`
 
 Todas las demás rutas requieren autenticación.
+
+### Convenciones
+- **ADMIN** → acceso total.
+- **USER** → acceso a ciertas rutas.
+- **PUBLIC** → no requiere autenticación.
 
 ## Rutas usuarios 
 #### Rutas usuario (/api/usuario/):
