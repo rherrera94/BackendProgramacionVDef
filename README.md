@@ -24,6 +24,11 @@
    - [Dependencias utilizadas](#Dependencias-utilizadas)
    - [Estructura del Proyecto](#Estructura)
 - [Rutas](#Rutas)
+   - [Seguridad y Autenticación](#Seguridad-y-Autenticación)
+      - [Roles](#Roles)
+      - [Login](#Login)
+      - [Archivos para seguridad](#Funcion-de-los-archivos)
+      - [Rutas de libre acceso](#Rutas-sin-autenticación)
    - [Rutas usuarios](#Rutas-usuarios)
    - [Rutas artículos](#Rutas-artículos)
    - [Rutas personas](#Rutas-personas)
@@ -179,10 +184,33 @@ BackendProgramacionVDEF/
 
 
 # Rutas
+## Seguridad y Autenticación
+
+El sistema implementa **Spring Security**, que protege todos los endpoints exceptuando `/auth/login` y `/error`.
+
+### Roles
+- **ADMIN**
+- **USER**
+
+### Login
+1. El usuario envía un usuario y contraseña a `/auth/login`.
+2. Spring Security valida las credenciales en la BBDD usando **CustomUserDetailsService**.
+3. Si el usuario y contraseña son correctas:
+   - El sistema crea una sesión y asigna el rol correspondiente.
+4. El rol determina a qué rutas se puede acceder.
+
+### Funcion de los archivos
+- `conf/SegurityConf.java` – configuración principal de seguridad.
+- `security/CustomUserDetailsService.java` – carga usuarios desde la BD.
+
+### Rutas sin autenticación
+- `/auth/login` (POST y GET)
+- `/error`
+
+Todas las demás rutas requieren autenticación.
+
 ## Rutas usuarios 
 #### Rutas usuario (/api/usuario/):
-**Nota: Esta sección es solo alcanzable a usuarios de rol admin, excepto el listado.**
-
 **Solo ADMIN**
 * `POST` | localhost:8080/api/usuario/add -> crea un nuevo usuario.
 
