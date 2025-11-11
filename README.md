@@ -71,18 +71,18 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 #### Rutas artículo (/api/articulo/):
 
 **Solo ADMIN**
-    * `POST`   | localhost:8080/api/articulo/add -> crea un nuevo artículo.
+* `POST`   | localhost:8080/api/articulo/add -> crea un nuevo artículo.
 
-    * `PUT`    | localhost:8080/api/articulo/update -> actualiza un artículo existente.
+* `PUT`    | localhost:8080/api/articulo/update -> actualiza un artículo existente.
 
-    * `DELETE` | localhost:8080/api/articulo/delete/{id} -> elimina un artículo por id.
+* `DELETE` | localhost:8080/api/articulo/delete/{id} -> elimina un artículo por id.
 
 **ADMIN y USER**
-    * `GET` | localhost:8080/api/articulo/listar -> lista todos los artículos.
+* `GET` | localhost:8080/api/articulo/listar -> lista todos los artículos.
 
-    * `GET` | localhost:8080/api/articulo/listar/{id} -> obtiene un artículo por id.
+* `GET` | localhost:8080/api/articulo/listar/{id} -> obtiene un artículo por id.
 
-    * `GET` | localhost:8080/api/articulo/buscar/nombre/{nombre} -> busca artículos por nombre.
+* `GET` | localhost:8080/api/articulo/buscar/nombre/{nombre} -> busca artículos por nombre.
 
 ## Rutas personas
 #### Rutas persona (/api/persona/):
