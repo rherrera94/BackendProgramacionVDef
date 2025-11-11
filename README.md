@@ -23,6 +23,9 @@
 - [Caracteristicas principales](#Características-principales)
    - [Dependencias utilizadas](#Dependencias-utilizadas)
    - [Estructura del Proyecto](#Estructura)
+   - [Base de datos](#Base-de-Datos)
+      - [Entidades Principales](#Entidades-principales)
+      - [Relaciones destacadas](#Relaciones-destacadas)
 - [Rutas](#Rutas)
    - [Seguridad y Autenticación](#Seguridad-y-Autenticación)
       - [Roles](#Roles)
@@ -183,6 +186,25 @@ BackendProgramacionVDEF/
     └── classes/
 ```
 
+#### Base de Datos
+
+El sistema utiliza **MySQL** como motor de base de datos.  
+Al iniciar por primera vez, Spring Boot crea automáticamente las tablas basadas en las entidades del paquete `model/`.
+
+##### Entidades principales
+- **usuarios** → representa los usuarios del sistema (conectado a Rol)
+- **roles** → define los roles de usuario (ADMIN / USER)
+- **persona** → Informacion de las personas cargadas en el sistema
+- **salas** → salas del edificio
+- **articulos** → elementos disponibles para su utilizacion.
+- **reservas** → registro de las reservas realizadas por los usuarios
+
+##### Relaciones destacadas
+- Un **Usuario** tiene un **Rol**
+- Una **Reserva** se relaciona con:
+  - Persona
+  - Sala
+  - Artículo
 
 # Rutas
 ## Seguridad y Autenticación
