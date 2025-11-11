@@ -21,13 +21,14 @@
    - [Iniciar localmente](#Iniciar-el-proyecto-de-manera-local)
 - [Caracteristicas principales](#Características-principales)
    - [Dependencias utilizadas](#Dependencias-utilizadas)
-   - [Rutas](#Rutas)
-      - [Rutas usuarios](#Rutas-usuarios)
-      - [Rutas artículos](#Rutas-artículos)
-      - [Rutas personas](#Rutas-personas)
-      - [Rutas reservas](#Rutas-reservas)
-      - [Rutas salas](#Rutas-salas)
-      - [Rutas públicas](#Rutas-públicas)
+   - [Estructura del Proyecto](#Estructura)
+- [Rutas](#Rutas)
+   - [Rutas usuarios](#Rutas-usuarios)
+   - [Rutas artículos](#Rutas-artículos)
+   - [Rutas personas](#Rutas-personas)
+   - [Rutas reservas](#Rutas-reservas)
+   - [Rutas salas](#Rutas-salas)
+   - [Rutas públicas](#Rutas-públicas)
 
 <br>
 
@@ -82,7 +83,7 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 <br>
 <br>
 
-## Estructura
+#### Estructura
 
 ```
 BackendProgramacionVDEF/
@@ -135,7 +136,7 @@ BackendProgramacionVDEF/
 ```
 
 
-## Rutas
+# Rutas
 ## Rutas usuarios 
 #### Rutas usuario (/api/usuario/):
 **Nota: Esta sección es solo alcanzable a usuarios de rol admin, excepto el listado.**
