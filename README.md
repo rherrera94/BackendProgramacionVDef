@@ -51,8 +51,19 @@ El objetivo principal de éste trabajo:
 * Definir modelo de pruebas para garantizar la calidad del código.
 * Plantear la plataforma donde se realizará el despliegue de la aplicación.
 
+Funcionalidades que se solicitan:
+
+* Registro y autenticación de usuarios por roles.
+* Ingreso y actualización de datos manual y vía api que se pueden reservar.
+* Monitor de predicción de reservas.
+
+
 Toda la API está asegurada mediante **Spring Security**, implementando autenticación y autorización por roles.  
 La persistencia se gestiona mediante **Spring Data JPA + Hibernate** y la información se almacena en una base de datos MySQL.
+
+> [!NOTE] 
+> **Para poder ver todo el historial de cambios que se realizaron antes de estas últimas versiones del backend, ingresar a
+> ![Repositorio anterior](https://github.com/CandelaQuintana/TrabajoPracticoPV)  
 
 # Instalación
 
