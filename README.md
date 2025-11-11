@@ -34,6 +34,9 @@
 
 # Instalación
 
+![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+
 El proyecto necesita para funcionar:
 - [Java SE 17.0.12](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) 
 - [Maven](https://maven.apache.org/download.cgi) 
@@ -59,7 +62,7 @@ $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 <br>
 
 > [!NOTE] 
-> **para comenzar a utilizar el sistema se debe crear la base de datos base_de_datos (de no estar creada la base de datos EL SISTEMA
+> **Para comenzar a utilizar el sistema se debe crear la base de datos base_de_datos (de no estar creada la base de datos EL SISTEMA
 > ARROJARA ERROR) y configurar las variables de entorno correspondientes en el archivo application.properties. Posteriormente al iniciar
 > por primera vez el sistema lo que sucedera es que el mismo creara las tablas iniciales y conformara los primeros usuarios (Admin y
 > user) con sus respectivas contraseñas 1234 y permisos.**
