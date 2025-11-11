@@ -56,7 +56,11 @@ $ mvn clean install
 $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 ```
 
-**Nota: para comenzar a utilizar el sistema se debe crear la base de datos base_de_datos (de no estar creada la base de datos EL SISTEMA ARROJARA ERROR) y configurar las variables de entorno correspondientes en el archivo application.properties. Posteriormente al iniciar por primera vez el sistema lo que sucedera es que el mismo creara las tablas iniciales y conformara los primeros usuarios (Admin y user) con sus respectivas contraseñas 1234 y permisos.**
+> [!NOTE] 
+> **para comenzar a utilizar el sistema se debe crear la base de datos base_de_datos (de no estar creada la base de datos EL SISTEMA
+> ARROJARA ERROR) y configurar las variables de entorno correspondientes en el archivo application.properties. Posteriormente al iniciar
+> por primera vez el sistema lo que sucedera es que el mismo creara las tablas iniciales y conformara los primeros usuarios (Admin y
+> user) con sus respectivas contraseñas 1234 y permisos.**
 
 # Características principales
 
