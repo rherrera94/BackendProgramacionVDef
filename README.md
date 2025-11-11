@@ -15,6 +15,7 @@
 ## Tabla de contenidos
 <br>
 
+- [Resumen del Proyecto](#Resumen-del-Proyecto)
 - [Instalación](#Instalación)
    - [Clonar](#Clonar-el-repositorio)
    - [Crear ejecutable](#Crear-ejecutable)
@@ -31,6 +32,27 @@
    - [Rutas públicas](#Rutas-públicas)
 
 <br>
+
+## Resumen del Proyecto
+
+Este backend corresponde a una **Plataforma de Gestión de Reservas**, desarrollada en Java y Spring Boot.  
+Descripción del proyecto:
+
+Se desea migrar una plataforma existente en el cual se quiere utilizar una herramienta para poder llevar las reservas de recursos en la organización. Por cuestiones de compliance se debe hacer la migración para poder seguir operando antes de los cambios de plataformas.
+Se desea además agregar un módulo de predicción de reservas para hacer uso eficiente de los recursos.
+El sistema a migrar está desarrollado en Java 8, con una base de datos Sql Server, donde los Dao 's estaban desarrollados con jdbc. Y varias configuraciones estaban estáticas en el código fuente.
+
+El objetivo principal de éste trabajo:
+
+* Seleccionar tecnologías adecuadas para el desarrollo del proyecto.
+* Realizar una MVP(una propuesta mínima viable posible).
+* Elegir una base de datos que se adapte mejor a los requisitos del proyecto.
+* Crear mocks de pantallas.
+* Definir modelo de pruebas para garantizar la calidad del código.
+* Plantear la plataforma donde se realizará el despliegue de la aplicación.
+
+Toda la API está asegurada mediante **Spring Security**, implementando autenticación y autorización por roles.  
+La persistencia se gestiona mediante **Spring Data JPA + Hibernate** y la información se almacena en una base de datos MySQL.
 
 # Instalación
 
