@@ -82,6 +82,59 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 <br>
 <br>
 
+## Estructura
+
+```
+BackendProgramacionVDEF/
+├── .mvn/                        # Archivos internos de Maven
+├── src/
+│   └── main/
+│       ├── java/com/example/demo/
+│       │   ├── conf/            # Configuraciones generales del proyecto
+│       │   │   └── SegurityConf.java
+│       │   │
+│       │   ├── controller/      # Controladores REST (manejan las rutas de la API)
+│       │   │   ├── ArticulosRestController.java
+│       │   │   ├── AuthController.java
+│       │   │   ├── PersonaRestController.java
+│       │   │   ├── ReservaRestController.java
+│       │   │   ├── SalaRestController.java
+│       │   │   └── UsuarioController.java
+│       │   │
+│       │   ├── model/           # Entidades JPA (mapeo a base de datos)
+│       │   │   ├── Articulos.java
+│       │   │   ├── Persona.java
+│       │   │   ├── Reserva.java
+│       │   │   ├── Rol.java
+│       │   │   ├── Sala.java
+│       │   │   └── Usuario.java
+│       │   │
+│       │   ├── repository/      # Repositorios (DAO/JPA)
+│       │   │   ├── Articulos_Repositorio.java
+│       │   │   ├── Persona_Repositorio.java
+│       │   │   ├── Reserva_Repositorio.java
+│       │   │   ├── Rol_Repositorio.java
+│       │   │   ├── Sala_Repositorio.java
+│       │   │   └── UsuarioRepository.java
+│       │   │
+│       │   ├── security/        # Lógica de seguridad personalizada
+│       │   │   └── CustomUserDetailsService.java
+│       │   │
+│       │   └── service/         # Servicios de negocio
+│       │       ├── ArticulosService.java
+│       │       ├── PersonaService.java
+│       │       ├── ReservaService.java
+│       │       ├── SalaService.java
+│       │       └── DemoApplication.java  # Clase principal de Spring Boot
+│       │
+│       └── resources/           # Configuraciones y recursos del proyecto
+│           └── application.properties
+│
+└── target/                      # Archivos generados por Maven (compilados)
+    └── classes/
+```
+
+
 ## Rutas
 ## Rutas usuarios 
 #### Rutas usuario (/api/usuario/):
