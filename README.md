@@ -131,8 +131,6 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 
 - [Spring Validation](https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html) - Implementa Bean Validation (Hibernate Validator) para validar datos de entrada mediante anotaciones.
 
-<br>
-
 
 #### Estructura
 
