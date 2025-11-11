@@ -5,6 +5,9 @@
 
 <h1 align="center" style="font-weight: bold;">Backend de la Plataforma de Gestión de Reservas 💻 </h1>
 
+<br>
+<br>
+
 # Instalación
 
 El proyecto necesita para funcionar:
@@ -49,7 +52,18 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 
 - [Spring Boot Test](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#features.testing) - Incluye JUnit, Mockito y herramientas de testing para realizar pruebas unitarias e integración.
 
-- [Spring Validation](https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html) - Implementa Bean Validation (Hibernate Validator) para validar datos de entrada mediante anotaciones como @NotNull, @Email, @Size, etc.
+- [Spring Validation](https://docs.spring.io/spring-framework/reference/core/validation/beanvalidation.html) - Implementa Bean Validation (Hibernate Validator) para validar datos de entrada mediante anotaciones.
 
+<br>
+<br>
 
+## Rutas usuarios
+   #### Rutas usuario (/api/usuario/):
+   **Nota: Esta sección es solo alcanzable a usuarios de rol admin.**
+
+   * `POST` | localhost:8080/api/usuario/add-> crea un nuevo usuario.
+
+   * `GET`  | localhost:8080/api/usuario/listar -> genera un listado generalizado de los usuarios registrados.
+
+## Rutas de la api
 
