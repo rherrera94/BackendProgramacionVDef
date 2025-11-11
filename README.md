@@ -72,12 +72,16 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 
 **Solo ADMIN**
     * `POST`   | localhost:8080/api/articulo/add -> crea un nuevo artículo.
+
     * `PUT`    | localhost:8080/api/articulo/update -> actualiza un artículo existente.
+
     * `DELETE` | localhost:8080/api/articulo/delete/{id} -> elimina un artículo por id.
 
 **ADMIN y USER**
     * `GET` | localhost:8080/api/articulo/listar -> lista todos los artículos.
+
     * `GET` | localhost:8080/api/articulo/listar/{id} -> obtiene un artículo por id.
+
     * `GET` | localhost:8080/api/articulo/buscar/nombre/{nombre} -> busca artículos por nombre.
 
 ## Rutas personas
@@ -85,13 +89,18 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 
 **Solo ADMIN**
 * `POST`   | localhost:8080/api/persona/add -> crea una nueva persona.
+
 * `PUT`    | localhost:8080/api/persona/actualizar -> actualiza datos de una persona.
+
 * `DELETE` | localhost:8080/api/persona/eliminar/{id} -> elimina una persona por id.
 
 **ADMIN y USER**
 * `GET` | localhost:8080/api/persona/listar -> lista todas las personas.
+
 * `GET` | localhost:8080/api/persona/listarporid/{id} -> obtiene una persona por id.
+
 * `GET` | localhost:8080/api/persona/buscar/email/{email} -> busca persona por email.
+
 * `GET` | localhost:8080/api/persona/buscar/nombre/{nombre} -> busca persona por nombre.
 
 ## Rutas reservas
@@ -99,11 +108,14 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 
 **Solo ADMIN**
 * `PUT`    | localhost:8080/api/reservas/actualizar/{id} -> actualiza una reserva existente.
+
 * `DELETE` | localhost:8080/api/reservas/borrar/{id} -> elimina una reserva por id.
 
 **ADMIN y USER**
 * `GET`  | localhost:8080/api/reservas/listar -> lista todas las reservas.
+
 * `GET`  | localhost:8080/api/reservas/listar/{id} -> obtiene una reserva por id.
+
 * `POST` | localhost:8080/api/reservas/crear -> crea una nueva reserva.
 
 ## Rutas salas
@@ -111,7 +123,9 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 
 **Solo ADMIN**
 * `GET` | localhost:8080/api/salas/crear -> crea una nueva sala.
+
 * `GET` | localhost:8080/api/salas/actualizar -> actualiza una sala.
+
 * `GET` | localhost:8080/api/salas/borrar/{id} -> elimina una sala por id.
 
 **ADMIN y USER**
@@ -122,7 +136,9 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 
 **Públicas**
 * `POST` | localhost:8080/auth/login -> login hacia la API.
+
 * `GET`  | localhost:8080/auth/login -> login hacia la API(en modo GET).
+
 * `GET`  | localhost:8080/error -> endpoint de error manejado por Spring.
 
 
