@@ -12,6 +12,25 @@
 <br>
 <br>
 
+## Tabla de contenidos
+<br>
+
+- [Instalación](#Instalación)
+   - [Clonar](#Clonar-el-repositorio)
+   - [Crear ejecutable](#Crear-ejecutable)
+   - [Iniciar localmente](#Iniciar-el-proyecto-de-manera-local)
+- [Caracteristicas principales](#Características-principales)
+   - [Dependencias utilizadas](#Dependencias-utilizadas)
+   - [Rutas](#Rutas)
+      - [Rutas usuarios](#Rutas-usuarios)
+      - [Rutas artículos](#Rutas-artículos)
+      - [Rutas personas](#Rutas-personas)
+      - [Rutas reservas](#Rutas-reservas)
+      - [Rutas salas](#Rutas-salas)
+      - [Rutas públicas](#Rutas-públicas)
+
+<br>
+
 # Instalación
 
 El proyecto necesita para funcionar:
@@ -38,7 +57,9 @@ $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 
 **Nota: para comenzar a utilizar el sistema se debe crear la base de datos base_de_datos (de no estar creada la base de datos EL SISTEMA ARROJARA ERROR) y configurar las variables de entorno correspondientes en el archivo application.properties. Posteriormente al iniciar por primera vez el sistema lo que sucedera es que el mismo creara las tablas iniciales y conformara los primeros usuarios (Admin y user) con sus respectivas contraseñas 1234 y permisos.**
 
-#  Dependencias utilizadas
+# Características principales
+
+####  Dependencias utilizadas
 
 Para poder operar el Backend utiliza diferentes librerías que se detallan a continuación
 
@@ -61,6 +82,7 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 <br>
 <br>
 
+## Rutas
 ## Rutas usuarios 
 #### Rutas usuario (/api/usuario/):
 **Nota: Esta sección es solo alcanzable a usuarios de rol admin, excepto el listado.**
@@ -108,7 +130,7 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 * `GET` | localhost:8080/api/persona/buscar/nombre/{nombre} -> busca persona por nombre.
 
 ## Rutas reservas
-#### Rutas reservas (/api/reservas/):
+#### Rutas reserva (/api/reservas/):
 
 **Solo ADMIN**
 * `PUT`    | localhost:8080/api/reservas/actualizar/{id} -> actualiza una reserva existente.
@@ -123,7 +145,7 @@ Para poder operar el Backend utiliza diferentes librerías que se detallan a con
 * `POST` | localhost:8080/api/reservas/crear -> crea una nueva reserva.
 
 ## Rutas salas
-#### Rutas salas (/api/salas/):
+#### Rutas sala (/api/salas/):
 
 **Solo ADMIN**
 * `GET` | localhost:8080/api/salas/crear -> crea una nueva sala.
