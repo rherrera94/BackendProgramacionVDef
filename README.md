@@ -55,6 +55,8 @@ $ mvn clean install
 ```sh
 $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 ```
+<br>
+<br>
 
 > [!NOTE] 
 > **para comenzar a utilizar el sistema se debe crear la base de datos base_de_datos (de no estar creada la base de datos EL SISTEMA
