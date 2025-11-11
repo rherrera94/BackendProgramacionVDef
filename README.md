@@ -21,6 +21,7 @@
    - [Crear ejecutable](#Crear-ejecutable)
    - [Iniciar localmente](#Iniciar-el-proyecto-de-manera-local)
 - [Caracteristicas principales](#Características-principales)
+   - [Documentación Postman](#Documentación-Postman)
    - [Dependencias utilizadas](#Dependencias-utilizadas)
    - [Estructura del Proyecto](#Estructura)
    - [Base de datos](#Base-de-Datos)
@@ -110,6 +111,11 @@ $ java -jar target/demo-0.0.1-SNAPSHOT.jar
 > user) con sus respectivas contraseñas 1234 y permisos.**
 
 # Características principales
+
+#### Documentación Postman
+
+[Documentacion Postman](https://documenter.getpostman.com/view/17357164/2sB3WttKXN)
+
 
 ####  Dependencias utilizadas
 
