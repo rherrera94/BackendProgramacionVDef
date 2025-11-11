@@ -63,7 +63,7 @@ La persistencia se gestiona mediante **Spring Data JPA + Hibernate** y la inform
 
 > [!NOTE] 
 > **Para poder ver todo el historial de cambios que se realizaron antes de estas últimas versiones del backend, ingresar a
-> ![Repositorio anterior](https://github.com/CandelaQuintana/TrabajoPracticoPV)  
+> [Repositorio anterior](https://github.com/CandelaQuintana/TrabajoPracticoPV)  
 
 # Instalación
 
